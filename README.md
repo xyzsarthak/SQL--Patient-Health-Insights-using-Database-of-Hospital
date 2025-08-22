@@ -7,45 +7,8 @@ Objective:
 The aim of this project is to build a normalized SQL-based healthcare data system to track patient information, their medical appointments, and associated medication prescriptions. This project allows querying across these linked datasets to generate real-world health insights. It simulates the kind of backend data structure used by hospitals, clinics, or health-tech companies to monitor patient interactions, doctor performance, and medication trends.
 
 ________________________________________
-Data Description
 
-This health database consists of three relational tables with a one-to-many relationship among them:
-________________________________________
-Table 1: Patients
-
-Column Name	     |    Data Type	  |   Description
-
-patient_id	     |   INT (PK)	    |  Unique identifier for each patient
-name	           |   VARCHAR	    |   Full name of the patient
-age	             |   INT	        |   Gender (e.g., Male, Female, Other)
-city	           |   VARCHAR	    |   City of residence
-registration_date|	 DATE	        |  Date when the patient registered in system
-________________________________________
-
-
-Table 2: Appointments
-
-Column Name	         Data Type	    Description
-
-appointment_id	     INT (PK)	      Unique ID for each appointment
-patient_id	         INT (FK)	      References Patients(patient_id)
-appointment_date	   DATE	          Date of the appointment
-doctor_name	         VARCHAR	      Name of consulting doctor
-department	         VARCHAR	      Medical department (e.g., Cardiology, General)
-diagnosis	           VARCHAR	      Diagnosis made during the appointment
-________________________________________
-Table 3: Medications
-
-Column Name	     Data Type	     Description
-
-medication_id	    INT (PK)	     Unique ID for each medication prescribed
-appointment_id	  INT (FK)	     References Appointments(appointment_id)
-medicine_name	    VARCHAR	       Name of the medicine prescribed
-dosage_per_day	  INT	           Times medicine should be taken per day
-duration_days	    INT	           Number of days the medicine is prescribed for
-________________________________________
-
-Based on given table find these insight
+Based on given table in xlsx which needs to be imported to SQL Server and table scheme, Find these insight
 
 Section 1
 
