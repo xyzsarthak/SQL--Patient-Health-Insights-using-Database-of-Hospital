@@ -13,14 +13,13 @@ This health database consists of three relational tables with a one-to-many rela
 ________________________________________
 Table 1: Patients
 
-Column Name	         Data Type	     Description
+Column Name	     |    Data Type	  |   Description
 
-patient_id	         INT (PK)	       Unique identifier for each patient
-name	               VARCHAR	       Full name of the patient
-age	                 INT	           Age in years
-gender	             VARCHAR	       Gender (e.g., Male, Female, Other)
-city	               VARCHAR	       City of residence
-registration_date	   DATE	           Date when the patient registered in system
+patient_id	     |   INT (PK)	    |  Unique identifier for each patient
+name	           |   VARCHAR	    |   Full name of the patient
+age	             |   INT	        |   Gender (e.g., Male, Female, Other)
+city	           |   VARCHAR	    |   City of residence
+registration_date|	 DATE	        |  Date when the patient registered in system
 ________________________________________
 
 
@@ -160,4 +159,8 @@ Section  5
 9.	Identify patients who had more than one appointment and were prescribed at least two medicines.
 
 10.	Get the list of all medicines prescribed to patients aged 60 and above.
+
+
+
+
 
